@@ -1,0 +1,12 @@
+    <layout>
+      <configItem>
+        <name>jawimy</name>
+        <shortDescription>jwm</shortDescription>
+        <description>Jawi (MY)</description>
+        <countryList>
+          <iso3166Id>MY</iso3166Id>
+        </countryList>
+        <languageList><iso639Id>msa</iso639Id></languageList>
+      </configItem>
+    </layout>
+    <layout>
