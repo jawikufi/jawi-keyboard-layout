@@ -1,58 +1,115 @@
 // Arabic keyboard layout
 default partial alphanumeric_keys
-xkb_symbols "basic" {
+xkb_symbols "jawimy" {
 
     name[Group1]= "Jawi (MY)";
 
-    key <TLDE> { [ Arabic_thal, Arabic_shadda ] };  // ‎ذ‎ ‎◌ّ‎
-    key <AE01> { [ U0762, exclam ] };  // ݢ 1 !
-    key <AE02> { [ U06CF, at ] };  // ۏ 2 @
-    key <AE03> { [ U06BD, numbersign ] };  // ڽ 3 #
-    key <AE04> { [ Arabic_peh, dollar ] };  // ڤ 4 $
-    key <AE05> { [ U06A0, percent ] };  // ڠ 5 %
-    key <AE06> { [ Arabic_tcheh, asciicircum ] };  // چ 6 ‎ی‎
-    key <AE07> { [ Arabic_keheh, ampersand ] };  // ک 7 &
-    // key <AE08> { [ 8, asterisk ] };  // 8 *
-    // key <AE09> { [ 9, parenright ] };  // 9 )
-    // key <AE10> { [ 0, parenleft ] };  // 0 (
-    // key <AE11> { [ minus, underscore ] };
-    // key <AE12> { [ equal, plus ] };
+    key <TLDE> { [ Arabic_thal ] };                     // ذ
+    key <AE01> { [ U0762, exclam ] };                   // ݢ 1 !
+    key <AE02> { [ U06CF, at ] };                       // ۏ 2 @
+    key <AE03> { [ U06BD, numbersign ] };               // ڽ 3 #
+    key <AE04> { [ UFB6B, dollar ] };                   // ڤ 4 $
+    key <AE05> { [ U06A0, percent ] };                  // ڠ 5 %
+    key <AE06> { [ Arabic_tcheh, asciicircum ] };       // چ 6
+    key <AE07> { [ 7, ampersand ] };                    // 7 &
+    key <AE08> { [ 8, asterisk ] };                     // 8 *
+    key <AE09> { [ 9, parenright ] };                   // 9 )
+    key <AE10> { [ 0, parenleft ] };                    // 0 (
 
-    key <AD01> { [ Arabic_sheen, Arabic_SHEEN ] };
-    key <AD02> { [ Arabic_sad, Arabic_SAD ] };
-    key <AD03> { [ Arabic_theh, Arabic_THEH ] };
-    key <AD04> { [ Arabic_qaf, Arabic_QAF ] };
-    key <AD05> { [ Arabic_feh, Arabic_FEH ] };
-    key <AD06> { [ Arabic_ghain, Arabic_GHAIN ] };
-    key <AD07> { [ Arabic_ain, Arabic_AIN ] };
-    key <AD08> { [ Arabic_ha, Arabic_HA ] };
-    key <AD09> { [ Arabic_khah, Arabic_KHAH ] };
-    key <AD10> { [ Arabic_hah, Arabic_HAH ] };
-    key <AD11> { [ Arabic_jeem, Arabic_JEEM ] };
-    key <AD12> { [ Arabic_dal, Arabic_DAL ] };
+    key <AD01> { [ Arabic_dad ] };                      // Q
+    key <AD02> { [ Arabic_sad ] };                      // W
+    key <AD03> { [ Arabic_theh ] };                     // E
+    key <AD04> { [ Arabic_qaf ] };                      // R 
+    key <AD05> { [ Arabic_feh ] };                      // T
+    key <AD06> { [ Arabic_ghain ] };                    // Y
+    key <AD07> { [ Arabic_ain, 4 ] };                   // U
+    key <AD08> { [ Arabic_ha, 5 ] };                    // I
+    key <AD09> { [ Arabic_khah, 6 ] };                  // O
+    key <AD10> { [ Arabic_hah ] };                      // P
+    key <AD11> { [ Arabic_jeem ] };                     // [
+    key <AD12> { [ Arabic_dal ] };                      // ]
 
-    key <AC01> { [ Arabic_seen, Arabic_SEEN ] };
-    key <AC02> { [ Arabic_yeh, Arabic_YEH ] };
-    key <AC03> { [ Arabic_beh, Arabic_BEH ] };
-    key <AC04> { [ Arabic_lam, Arabic_LAM ] };
-    key <AC05> { [ Arabic_alef, Arabic_ALEF ] };
-    key <AC06> { [ Arabic_teh, Arabic_TEH ] };
-    key <AC07> { [ Arabic_noon, Arabic_NOON ] };
-    key <AC08> { [ Arabic_meem, Arabic_MEEM ] };
-    key <AC09> { [ Arabic_kaf, Arabic_KAF ] };
-    key <AC10> { [ Arabic_tah, Arabic_TAH ] };
-    key <AC11> { [ Arabic_zah, Arabic_ZAH ] };
+    key <AC01> { [ Arabic_sheen ] };                    // A
+    key <AC02> { [ Arabic_seen ] };                     // S
+    key <AC03> { [ Arabic_yeh ] };                      // D
+    key <AC04> { [ Arabic_beh ] };                      // F
+    key <AC05> { [ Arabic_lam ] };                      // G
+    key <AC06> { [ Arabic_alef ] };                     // H
+    key <AC07> { [ Arabic_teh, 1 ] };                   // J
+    key <AC08> { [ Arabic_noon, 2 ] };                  // K
+    key <AC09> { [ Arabic_meem, 3 ] };                  // L
+    key <AC10> { [ Arabic_keheh, Arabic_semicolon ] };  // :
+    key <AC11> { [ Arabic_tah ] };                      // "
 
-    key <AB01> { [ Arabic_zain, Arabic_ZAIN ] };
-    key <AB02> { [ Arabic_khah, Arabic_KHAH ] };
-    key <AB03> { [ Arabic_damma, Arabic_damma ] };
-    key <AB04> { [ Arabic_waw, Arabic_WAW ] };
-    key <AB05> { [ Arabic_comma, Arabic_semicolon ] };
-    key <AB06> { [ Arabic_sukun, Arabic_sukun ] };
-    key <AB07> { [ Arabic_question_mark, Arabic_question_mark ] };
-    key <AB08> { [ Arabic_hamzaonalef, Arabic_hamzaonalef ] };
-    key <AB09> { [ Arabic_maddaonalef, Arabic_maddaonalef ] };
-    key <AB10> { [ Arabic_hamza, Arabic_hamza ] };
+    key <AB01> { [ Arabic_hamzaonyeh ] };               // Z
+    key <AB02> { [ Arabic_hamza ] };                    // X
+    key <AB03> { [ Arabic_hamzaonwaw ]};                // C
+    key <AB04> { [ Arabic_ra ]};                        // V
+    key <AB05> { [ Arabic_alefmaksura ]};               // B
+    key <AB06> { [ Arabic_tehmarbuta ]};                // N
+    key <AB07> { [ Arabic_waw, 0 ] };                   // M
+    key <AB08> { [ Arabic_zain, Arabic_comma ]};        // <
+    key <AB09> { [ Arabic_zah, period  ]};              // >
+    key <AB10> { [ Arabic_question_mark ]};             // ?
 
+    key <SPCE> { [ space ] };
+};
+
+// Phonetic keyboard layout
+default partial alphanumeric_keys
+xkb_symbols "phonetic" {
+
+    name[Group1]= "Jawi (MY, phonetic)";
+
+    // Number row
+    key <AE01> { [ 1, Arabic_1 ] };                     // 1
+    key <AE02> { [ 2, Arabic_2 ] };                     // 2
+    key <AE03> { [ 3, Arabic_3 ] };                     // 3
+    key <AE04> { [ 4, Arabic_4 ] };                     // 4
+    key <AE05> { [ 5, Arabic_5 ] };                     // 5
+    key <AE06> { [ 6, Arabic_6 ] };                     // 6
+    key <AE07> { [ 7, Arabic_7 ] };                     // 7
+    key <AE08> { [ 8, Arabic_8 ] };                     // 8
+    key <AE09> { [ 9, Arabic_9 ] };                     // 9
+    key <AE10> { [ 0, Arabic_0 ] };                     // 0
+
+    // Top row (QWERTY)
+    key <AD01> { [ Arabic_qaf ] };                      // Q ق
+    key <AD02> { [ Arabic_waw, Arabic_hamzaonwaw ] };   // W و ؤ
+    key <AD03> { [ Arabic_hamza, Arabic_hamzaonyeh ] }; // E ء ئ
+    key <AD04> { [ Arabic_ra ] };                       // R ر
+    key <AD05> { [ Arabic_teh, Arabic_tehmarbuta ] };   // T ت ة
+    key <AD06> { [ U06BD ] };                           // Y ڽ (nya)
+    key <AD07> { [ Arabic_ain ] };                      // U ع
+    key <AD08> { [ Arabic_yeh, Arabic_alefmaksura ] };  // I ي ى
+    key <AD09> { [ U06A0, Arabic_ghain ] };             // O ڠ غ (Nga)
+    key <AD10> { [ UFB6B ] };                           // P ﭫ (Peh)
+
+    // Home row
+    key <AC01> { [ Arabic_alef ] };                     // A ا
+    key <AC02> { [ Arabic_seen, Arabic_sad ] };         // S س
+    key <AC03> { [ Arabic_dal, Arabic_dad ] };          // D د
+    key <AC04> { [ Arabic_feh ] };                      // F ف
+    key <AC05> { [ U0762 ] };                           // G ݢ (Gaf w/ Meem Above)
+    key <AC06> { [ Arabic_ha, Arabic_hah ] };           // H ه ح
+    key <AC07> { [ Arabic_jeem ] };                     // J ج
+    key <AC08> { [ Arabic_keheh, Arabic_kaf ] };        // K ک ك
+    key <AC09> { [ Arabic_lam ] };                      // L ل
+    key <AC10> { [ Arabic_tah, Arabic_semicolon ] };    // ط   
+    key <AC11> { [ Arabic_theh ] };                     // ث  
+
+    // Bottom row
+    key <AB01> { [ Arabic_zain, Arabic_thal ] };        // Z ز ذ
+    key <AB02> { [ Arabic_sheen ] };                    // X ش 
+    key <AB03> { [ Arabic_tcheh ] };                    // C چ (Tcheh)
+    key <AB04> { [ U06CF ] };                           // V ۏ (Ve)
+    key <AB05> { [ Arabic_beh ] };                      // B ب
+    key <AB06> { [ Arabic_noon ] };                     // N ن
+    key <AB07> { [ Arabic_meem ] };                     // M م 
+    key <AB08> { [ Arabic_zah, Arabic_comma ] };        // ظ    
+    key <AB09> { [ Arabic_khah, period ] };             // خ 
+    key <AB10> { [ Arabic_question_mark ] };            // ؟
+
+    // Spacebar and others
     key <SPCE> { [ space ] };
 };

@@ -1,12 +1,21 @@
     <layout>
       <configItem>
         <name>jawimy</name>
-        <shortDescription>jwm</shortDescription>
-        <description>Jawi (MY)</description>
+        <shortDescription>jwy</shortDescription>
+        <description>Malay (Jawi Arabic)</description>
         <countryList>
           <iso3166Id>MY</iso3166Id>
         </countryList>
-        <languageList><iso639Id>msa</iso639Id></languageList>
+        <languageList>
+          <iso639Id>msa</iso639Id>
+        </languageList>
       </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>phonetic</name>
+            <description>Malay (Jawi phonetic)</description>
+          </configItem>
+        </variant>
+      </variantList>
     </layout>
-    <layout>
