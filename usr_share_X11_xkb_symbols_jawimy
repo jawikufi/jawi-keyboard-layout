@@ -23,11 +23,11 @@ xkb_symbols "jawimy" {
     key <AD03> { [ Arabic_theh, any ] };                // E ث
     key <AD04> { [ Arabic_qaf, any ] };                 // R ق
     key <AD05> { [ Arabic_feh, any ] };                 // T ف
-    key <AD06> { [ Arabic_ghain, U06BD ] };             // Y غ ڽ
+    key <AD06> { [ Arabic_ghain, U06BD ] };             // Y غ ڽ (nya)
     key <AD07> { [ Arabic_ain, U0671 ] };               // U ع ٱ
     key <AD08> { [ Arabic_ha, any ] };                  // I ه 
     key <AD09> { [ Arabic_khah, any ] };                // O خ 
-    key <AD10> { [ Arabic_hah, UFB6B ] };               // P ح ڤ
+    key <AD10> { [ Arabic_hah, UFB6B ] };               // P ح ڤ (peh)
     key <AD11> { [ Arabic_jeem, any ] };                // [ ج
     key <AD12> { [ Arabic_dal, any ] };                 // ] د
     key <BKSL> { [ U0625, U0623 ] };                    // \ إ أ 
@@ -37,22 +37,22 @@ xkb_symbols "jawimy" {
     key <AC02> { [ Arabic_seen, any ] };                // S س
     key <AC03> { [ Arabic_yeh, any ] };                 // D ي
     key <AC04> { [ Arabic_beh, any ] };                 // F ب
-    key <AC05> { [ Arabic_lam, U0762 ] };               // G ل ݢ
+    key <AC05> { [ Arabic_lam, U0762 ] };               // G ل ݢ (gaf w/ meem above)
     key <AC06> { [ Arabic_alef, U0622 ] };              // H ا آ
     key <AC07> { [ Arabic_teh, any ] };                 // J ت 
-    key <AC08> { [ Arabic_noon, any ] };                // K ن 
+    key <AC08> { [ Arabic_noon, Arabic_keheh ] };       // K ن ک 
     key <AC09> { [ Arabic_meem, any ] };                // L م 
-    key <AC10> { [ Arabic_keheh, Arabic_semicolon ] };  // : ک ؛
-    key <AC11> { [ Arabic_tah, any ] };                 // " ط
+    key <AC10> { [ Arabic_kaf, Arabic_semicolon ] };    // : ك ؛
+    key <AC11> { [ Arabic_tah, any ] };                 // " ط 
 
     // Bottom row
     key <AB01> { [ Arabic_hamzaonyeh, U06D0 ] };        // Z ئ ې (e-taling)
     key <AB02> { [ Arabic_hamza, U06C6 ] };             // X ء ۆ 
-    key <AB03> { [ Arabic_hamzaonwaw, Arabic_tcheh ]};  // C ؤ چ 
-    key <AB04> { [ Arabic_ra, U06CF ]};                 // V ر ۏ
+    key <AB03> { [ Arabic_hamzaonwaw, Arabic_tcheh ]};  // C ؤ چ (tcheh) 
+    key <AB04> { [ Arabic_ra, U06CF ]};                 // V ر ۏ (ve)
     key <AB05> { [ Arabic_alefmaksura, U06CE ]};        // B ى ێ
-    key <AB06> { [ Arabic_tehmarbuta, U06A0 ]};         // N ة ڠ
-    key <AB07> { [ Arabic_waw, U0624 ] };               // M و ؤ
+    key <AB06> { [ Arabic_tehmarbuta, U06A0 ]};         // N ة ڠ (nga)
+    key <AB07> { [ Arabic_waw, any ] };                 // M و
     key <AB08> { [ Arabic_zain, Arabic_comma ]};        // < ز ،
     key <AB09> { [ Arabic_zah, period  ]};              // > ظ .
     key <AB10> { [ Arabic_question_mark, any ]};        // / ؟
@@ -89,8 +89,8 @@ xkb_symbols "phonetic" {
     key <AD07> { [ Arabic_ain, U0671 ] };               // U ع ٱ
     key <AD08> { [ Arabic_yeh, Arabic_alefmaksura ] };  // I ي ى
     key <AD09> { [ Arabic_ghain, any ] };               // O غ 
-    key <AD10> { [ UFB6B ] };                           // P ﭫ (peh)
-    key <AD11> { [ U0624, U06C6 ] };                    // [ ؤ ۆ
+    key <AD10> { [ UFB6B, any ] };                      // P ﭫ (peh)
+    key <AD11> { [ U06C6, any ] };                      // [ ۆ
     key <AD12> { [ U06D0, U06CE ] };                    // ] ې ێ (e-taling)
     key <BKSL> { [ U0625, U0623 ] };                    // \ إ أ 
 
